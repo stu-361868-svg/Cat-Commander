@@ -1,8 +1,24 @@
 using UnityEngine;
-using 
+using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+
+
+    public void GoToGame()
+    {
+        SceneManager.LoadScene("Main Scene");
+    }
+
+    public void GoToMenu()
+    {
+        SceneManager.LoadScene("MenuScene");
+    }
+
+    public void GoToGameOver()
+    {
+        SceneManager.LoadScene("GameOverScene");
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
