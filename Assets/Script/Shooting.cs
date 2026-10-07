@@ -20,14 +20,14 @@ public class Shooting : MonoBehaviour
     void Update()
     {
         mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
-        Vector3 rotation = mousePos - transform.position;
+        Vector3 rotation = transform.position - mousePos;
         float rotZ = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, rotZ);
-        
+
         if (!canFire)
         {
             timer += Time.deltaTime;
-            if(timer > timeBetweenFiring)
+            if (timer > timeBetweenFiring)
             {
                 canFire = true;
                 timer = 0;
