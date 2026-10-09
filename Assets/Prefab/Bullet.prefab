@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1726773540816825202}
   - component: {fileID: 7391257192307144506}
   - component: {fileID: 3646846861545806846}
-  - component: {fileID: -828798442324169796}
+  - component: {fileID: -3692030766205439492}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 2221234793403149952}
   serializedVersion: 2
   m_LocalRotation: {x: 0.0089853285, y: 0.009032501, z: 0.70519584, w: 0.70889807}
-  m_LocalPosition: {x: 0.88, y: 0.038122263, z: 0.013408194}
+  m_LocalPosition: {x: 0.88, y: 0.038122263, z: 0}
   m_LocalScale: {x: 3.61, y: 3.28, z: -0.52}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b7aba8c4a29d5f4991f29db27cd4157, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 10
+  force: 100
 --- !u!50 &3646846861545806846
 Rigidbody2D:
   serializedVersion: 5
@@ -130,8 +130,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!61 &-828798442324169796
-BoxCollider2D:
+--- !u!58 &-3692030766205439492
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -160,19 +160,9 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.15, y: 0.15}
-    newSize: {x: 0.2, y: 0.2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.15, y: 0.15}
-  m_EdgeRadius: 0
+  m_Radius: 0.074999996
