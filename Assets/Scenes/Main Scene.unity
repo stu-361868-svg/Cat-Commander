@@ -285,7 +285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9d6e1da3ef2cfe47b9e644c99dea12b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 7633287366184908184, guid: a5e74b4dece76754e88758c3606ec666, type: 3}
+  enemyPrefab: {fileID: 3421381641183804682, guid: a5e74b4dece76754e88758c3606ec666, type: 3}
   spawnRate: 2
   spawnDistance: 5
   timeSincelastSpawn: 2
@@ -316,6 +316,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2553361381670242911, guid: c733f3ea74992374398d12b5f54b248a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7112908429627631751, guid: c733f3ea74992374398d12b5f54b248a, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 4316506265886973868, guid: f962ec68183acf947aac0d1d9b6242da, type: 3}
     - target: {fileID: 7885675489719114130, guid: c733f3ea74992374398d12b5f54b248a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.79
