@@ -4,10 +4,13 @@ public class enemy : MonoBehaviour
 {
     public float moveSpeed;
     public Transform player;
+
+    public GameObject UI;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        UI = GameObject.FindGameObjectWithTag("UI");
     }
 
     // Update is called once per frame
@@ -26,6 +29,7 @@ public class enemy : MonoBehaviour
     {
         if(collision.gameObject.tag == "Bullet")
         {
+            UI.GetComponent<ScoreSystem>().AddScore();
             Destroy(gameObject);
         }
     }
