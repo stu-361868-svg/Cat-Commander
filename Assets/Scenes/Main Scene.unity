@@ -10464,6 +10464,85 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &662072573
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 662072574}
+  - component: {fileID: 662072576}
+  - component: {fileID: 662072575}
+  m_Layer: 5
+  m_Name: HealthText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &662072574
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662072573}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 928733597}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -646, y: -501}
+  m_SizeDelta: {x: 435.5727, y: 166.6749}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &662072575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662072573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 56
+    m_FontStyle: 2
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 181
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1.22
+  m_Text: Health :100
+--- !u!222 &662072576
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662072573}
+  m_CullTransparentMesh: 1
 --- !u!1 &667130436
 GameObject:
   m_ObjectHideFlags: 0
@@ -13733,8 +13812,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28f95d771311e32488e17bd538d71599, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: 5
-  maxHealth: 5
+  playerHealth: 100
+  maxHealth: 100
+  healthText: {fileID: 662072575}
 --- !u!50 &921684243
 Rigidbody2D:
   serializedVersion: 5
@@ -13762,6 +13842,11 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!224 &928733597 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4905916408140083098, guid: 29dfe8f978018d447aedfd47b5a0b4b1, type: 3}
+  m_PrefabInstance: {fileID: 982125114699764130}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &930975530
 GameObject:
   m_ObjectHideFlags: 0
@@ -32088,7 +32173,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4905916408140083098, guid: 29dfe8f978018d447aedfd47b5a0b4b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 662072574}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29dfe8f978018d447aedfd47b5a0b4b1, type: 3}
 --- !u!1001 &7148729349928900266

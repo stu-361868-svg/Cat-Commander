@@ -1,10 +1,15 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms.Impl;
+using UnityEngine.UI;
+
 
 public class PlayerHealth : MonoBehaviour
 {
     public float playerHealth;
     public float maxHealth;
+
+    public Text healthText;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -46,6 +51,8 @@ public class PlayerHealth : MonoBehaviour
                 gameObject.SetActive(false);
                 GoToGameOver();
             }
+
+            healthText.text = "Health :" +playerHealth.ToString();
         }
     }
     public void GoToGameOver()
