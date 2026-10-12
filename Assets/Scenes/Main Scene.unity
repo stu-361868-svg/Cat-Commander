@@ -16489,7 +16489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 3421381641183804682, guid: a5e74b4dece76754e88758c3606ec666, type: 3}
-  spawnRate: 2
+  spawnRate: 0
   spawnDistance: 5
   player: {fileID: 921684238}
   timeSincelastSpawn: 2
@@ -32116,12 +32116,20 @@ PrefabInstance:
       value: -0.24
       objectReference: {fileID: 0}
     - target: {fileID: 5018870779966924685, guid: c733f3ea74992374398d12b5f54b248a, type: 3}
+      propertyPath: m_Size.x
+      value: 4.7818713
+      objectReference: {fileID: 0}
+    - target: {fileID: 5018870779966924685, guid: c733f3ea74992374398d12b5f54b248a, type: 3}
       propertyPath: m_Size.y
-      value: 2.7318482
+      value: 8.190527
+      objectReference: {fileID: 0}
+    - target: {fileID: 5018870779966924685, guid: c733f3ea74992374398d12b5f54b248a, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.91406417
       objectReference: {fileID: 0}
     - target: {fileID: 5018870779966924685, guid: c733f3ea74992374398d12b5f54b248a, type: 3}
       propertyPath: m_Offset.y
-      value: 4.149317
+      value: 0.037584305
       objectReference: {fileID: 0}
     - target: {fileID: 5018870779966924685, guid: c733f3ea74992374398d12b5f54b248a, type: 3}
       propertyPath: m_IsTrigger
@@ -32133,7 +32141,7 @@ PrefabInstance:
       objectReference: {fileID: 4316506265886973868, guid: f962ec68183acf947aac0d1d9b6242da, type: 3}
     - target: {fileID: 7112908429627631751, guid: c733f3ea74992374398d12b5f54b248a, type: 3}
       propertyPath: timeBetweenFiring
-      value: 0.5
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 7885675489719114130, guid: c733f3ea74992374398d12b5f54b248a, type: 3}
       propertyPath: m_LocalPosition.x

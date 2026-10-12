@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -19,11 +20,7 @@ public class PlayerHealth : MonoBehaviour
             playerHealth = 0;
         }
 
-        if (playerHealth <= 0)
-        {
-            //death function
-            gameObject.SetActive(false);
-        }
+       
     }
 
 
@@ -42,6 +39,17 @@ public class PlayerHealth : MonoBehaviour
             playerHealth--;
             Debug.Log(playerHealth);
             Destroy(collision.gameObject);
+
+            if (playerHealth <= 0)
+            {
+                //death function
+                gameObject.SetActive(false);
+                GoToGameOver();
+            }
         }
+    }
+    public void GoToGameOver()
+    {
+        SceneManager.LoadScene("GameOverScene");
     }
 }
