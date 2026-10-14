@@ -5,6 +5,8 @@ public class enemy : MonoBehaviour
 {
     public float moveSpeed;
     public Transform player;
+
+    public float enemyHealth;
   
     public GameObject UI;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -24,6 +26,11 @@ public class enemy : MonoBehaviour
             Vector2 direction = (player.position - transform.position).normalized;
             transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
         }
+
+        if(enemyHealth <=  0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -31,7 +38,7 @@ public class enemy : MonoBehaviour
         if(collision.gameObject.tag == "Bullet")
         {
             UI.GetComponent<ScoreSystem>().AddScore();
-            Destroy(gameObject);
+            enemyHealth--;
         }
     }
 }

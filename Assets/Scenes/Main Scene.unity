@@ -10859,10 +10859,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 0
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!1 &553662161
 GameObject:
   m_ObjectHideFlags: 0
@@ -20682,10 +20678,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 1
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!61 &1074544936
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20742,6 +20734,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1083227826}
   - component: {fileID: 1083227825}
+  - component: {fileID: 1083227827}
   m_Layer: 0
   m_Name: Spawners
   m_TagString: Untagged
@@ -20762,8 +20755,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 3421381641183804682, guid: a5e74b4dece76754e88758c3606ec666, type: 3}
-  spawnRate: 0.2
-  spawnDistance: 15
+  spawnRate: 0.9
+  spawnDistance: 9
   player: {fileID: 8717861017492827060}
   timeSincelastSpawn: 2
 --- !u!4 &1083227826
@@ -20781,6 +20774,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1083227827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083227824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9d6e1da3ef2cfe47b9e644c99dea12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 3732820359341457880, guid: f78a90963761e1b43a3f479840189e98, type: 3}
+  spawnRate: 2
+  spawnDistance: 14
+  player: {fileID: 478178916}
+  timeSincelastSpawn: 4
 --- !u!1 &1083234005
 GameObject:
   m_ObjectHideFlags: 0
