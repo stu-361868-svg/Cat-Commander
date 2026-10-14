@@ -94,9 +94,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f0c88d5f7de02941813777d4b344723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 1.5
   player: {fileID: 0}
-  agent: {fileID: -3717155129516362348}
   UI: {fileID: 0}
 --- !u!50 &8768148303691045877
 Rigidbody2D:
@@ -222,7 +221,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7639469152813023159, guid: 313b5d91b3d1dbe47bcf687dd8e1949a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

@@ -4,7 +4,7 @@ using UnityEngine.AI;
 public class nava : MonoBehaviour
 {
     public NavMeshAgent agent;
-    public Transform target;
+    public Transform Target;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,6 +18,7 @@ public class nava : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        agent.SetDestination(target.position);
+        agent.SetDestination(Target.position);
     }
 }
+
