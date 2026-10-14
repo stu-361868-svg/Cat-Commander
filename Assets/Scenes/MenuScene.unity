@@ -264,6 +264,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2221263408620292204, guid: a2c9b13c722279a4087ff04cd0848883, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 454.6534
+      objectReference: {fileID: 0}
+    - target: {fileID: 2221263408620292204, guid: a2c9b13c722279a4087ff04cd0848883, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 307.5353
+      objectReference: {fileID: 0}
+    - target: {fileID: 2221263408620292204, guid: a2c9b13c722279a4087ff04cd0848883, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.0000076294
+      objectReference: {fileID: 0}
+    - target: {fileID: 2221263408620292204, guid: a2c9b13c722279a4087ff04cd0848883, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -323
+      objectReference: {fileID: 0}
+    - target: {fileID: 4457054278381432648, guid: a2c9b13c722279a4087ff04cd0848883, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5308135756828215818, guid: a2c9b13c722279a4087ff04cd0848883, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 321
@@ -280,6 +300,14 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.4811321
       objectReference: {fileID: 0}
+    - target: {fileID: 7068429739304193762, guid: a2c9b13c722279a4087ff04cd0848883, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7068429739304193762, guid: a2c9b13c722279a4087ff04cd0848883, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7473736996439186763, guid: 4f57c59f593c1ff41927ae60f772be8a, type: 3}
     - target: {fileID: 8205649306400870080, guid: a2c9b13c722279a4087ff04cd0848883, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -364,6 +392,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 9197283416872913067, guid: a2c9b13c722279a4087ff04cd0848883, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1208040086343421634, guid: c7f28fcfeba2d334e9c54fe3c206963a, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
