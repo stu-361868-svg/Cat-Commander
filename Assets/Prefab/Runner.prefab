@@ -96,7 +96,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 1
   player: {fileID: 0}
-  enemyHealth: 3
+  enemyHealth: 7
   UI: {fileID: 0}
 --- !u!50 &4758018978714502658
 Rigidbody2D:
